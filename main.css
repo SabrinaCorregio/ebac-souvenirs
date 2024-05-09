@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4169E1;
+    padding: 8px 0;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav, li, a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.sobre-a-loja {
+    display: flex;
+    margin-top: 24px;
+}
+
+.linha {
+    border: 1px solid;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #B0C4DE;
+}
+
+.texto-sobre p {
+    margin-top: 16px;
+    color: #000000;
+}
+
+.texto-sobre h2 {
+    color: #4169E1;
+}
+
+.produtos h2 {
+    color: #4169E1;
+    margin-top: 32px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.descricao button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4169E1;
+    color: #fff;
+    border: none;
+}
+
+.descricao button:hover {
+    background-color: #B0C4DE;
+}
+
+.descricao h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.souvenirs img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #4169E1;
+    padding: 8px 0;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container img {
+    width: 40px;
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-a-loja {
+        display: block;
+        margin-top: 24px;
+    }
+
+    .sobre-a-loja img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .descricao p, button {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: block;
+        padding: 0;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .descricao button {
+        margin-bottom: 70px;
+    }
+}
